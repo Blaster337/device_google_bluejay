@@ -74,3 +74,6 @@ BOARD_USES_METADATA_PARTITION := true
 # For Android 16 compatibility
 PLATFORM_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
+
+# Recovery fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
