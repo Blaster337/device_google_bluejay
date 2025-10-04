@@ -3,7 +3,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Inherit from bluejay device
-$(call inherit-product, device/google/bluejay/device.mk)
+$(call inherit-product, device/google/bluejay/device-bluejay.mk)
 
 # Inherit TWRP config
 $(call inherit-product, vendor/twrp/config/common.mk)
