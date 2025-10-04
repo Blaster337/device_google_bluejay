@@ -1,0 +1,12 @@
+# Android fstab file.
+# mount point       fstype    device                                  flags
+/system_root        ext4      /dev/block/bootdevice/by-name/system    flags=display="System";backup=1;wipeingui
+/system_ext         ext4      /dev/block/bootdevice/by-name/system_ext flags=display="System_ext";backup=1;wipeingui
+/product            ext4      /dev/block/bootdevice/by-name/product   flags=display="Product";backup=1;wipeingui
+/vendor             ext4      /dev/block/bootdevice/by-name/vendor    flags=display="Vendor";backup=1;wipeingui
+/vendor_boot        emmc      /dev/block/bootdevice/by-name/vendor_boot flags=display="Vendor Boot";backup=1;flashimg=1
+/boot               emmc      /dev/block/bootdevice/by-name/boot      flags=display="Boot";backup=1;flashimg=1
+/data               f2fs      /dev/block/bootdevice/by-name/userdata  flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0
+/misc               emmc      /dev/block/bootdevice/by-name/misc      flags=display="Misc"
+/metadata           ext4      /dev/block/bootdevice/by-name/metadata  flags=display="Metadata";backup=1
+/storage            ext4      /data/media/0                           flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
