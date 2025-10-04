@@ -15,5 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_bluejay.mk \
-    $(LOCAL_DIR)/lineage_bluejay.mk
+    $(LOCAL_DIR)/twrp_bluejay.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_bluejay-eng \
+    twrp_bluejay-userdebug
